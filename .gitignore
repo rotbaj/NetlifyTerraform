@@ -1,0 +1,15 @@
+# Local Terraform files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude all .tfvars files to prevent committing secrets
+*.tfvars
+*.tfvars.json
+
+# Insecure credentials
+.env
