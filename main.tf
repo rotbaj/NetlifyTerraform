@@ -20,14 +20,13 @@ resource "random_pet" "site_suffix" {
 
 # 4. Define the Netlify site resource
 resource "netlify_site" "challenge_site" {
-  # The Netlify auth token is read automatically from the NETLIFY_TOKEN env var
-  account_id = var.netlify_account_id
-
   # Create a unique site name like "hcp-challenge-clever-dog"
   name = "hcp-challenge-${random_pet.site_suffix.id}"
 
-  # Deploy files from the specified path
-  files {
-    source_dir = var.site_files_path
+  repo {
+    provider    = "github" 
+    repo_path   = "rotbaj/NetlifyTerraform"
+    repo_branch = "main" 
+    dir         = var.site_files_path
   }
 }

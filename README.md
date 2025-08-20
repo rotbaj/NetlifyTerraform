@@ -32,8 +32,8 @@ Follow these steps to configure your environment and deploy the site.
 
 Fork this repository to your own GitHub account and then clone it to your local machine:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/terraform-netlify-challenge.git](https://github.com/YOUR_USERNAME/terraform-netlify-challenge.git)
-cd terraform-netlify-challenge
+git clone [https://github.com/rotbaj/NetflifyTerraform.git](https://github.com/rotbaj/NetflifyTerraform.git)
+cd NetflifyTerraform
 ```
 
 ### 2. Configure Netlify Credentials
